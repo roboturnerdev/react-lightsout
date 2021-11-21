@@ -2,6 +2,27 @@
 
 It is a game board that has squares. Some are 'lit', some are 'out' and clicking a square toggles the adjacent squares.
 
+## Complete: Takeaways
+
+### Looping 2d Arrays
+
+* Simple logic to handle iterating rows and columns. I overthought a lot of this project.
+
+* Array.every() nested calls to handle logic on them as well.
+
+### Centralized State
+
+The `<Cell />` child here displays based on the class prop it's passed, and if clicked can call a function passed as prop from `<Board />` to flip the cells around itself. This allows the `<Cell />` to remain 'dumb'.
+
+> I enjoyed this project but it identified a clear problem: I'm over thinking it. I get the assignment and begin to wonder what the best way to display the board is, and got hung up wondering how to iterate over the board to display and check for victory every time. Watching the solution opened my eyes to a bit of that and I aim to clarify my intents based on what I've learned for the future assingments.
+
+<br>
+
+<img src="https://i.imgur.com/VWmXEFO.png">
+<img src="https://i.imgur.com/SKr4qOM.png">
+
+# Original Post
+
 ## Requirements
 
 * Think about the components that I need? Stateful parent with multiple dumb children display elements.
