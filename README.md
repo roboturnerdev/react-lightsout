@@ -71,6 +71,4 @@ render:
 
 ### What I missed:
 
-* Cell has the clickhandler for each instance of Cell, not the Parent.
-* In the clickhandler, call the parent function to flip the adjacent cells. This way Cell does not need to know about the other cells, hence centralized state.
-*
+* Cell gets the click handler from the parent as a prop and calls it which affects the state in the parent.
